@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {},
     fontFamily: {
-      'avenir': ['Avenir Roman','sans-serif'],
+      'avenir': ['Avenir LT Std','sans-serif'],
     }
   },
   plugins: [],
