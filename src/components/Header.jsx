@@ -98,12 +98,12 @@ const Header = () => {
                     onClick={handleAuth}
                     className="text-[#F4F4F4] border-zinc-500 border-2 px-4 py-2 uppercase font-['Poppins'] tracking-wider rounded-lg hover:bg-[#F4F4F4] outline-none hover:text-[#040714] hover:border-transparent transition-all opacity-100 ease duration-200">Login</button>
                 </div>): 
-                (<div className="flex items-center justify-center gap-4 group relative cursor-pointer">
-                    <h2 className="text-sm font-semibold tracking-wider">{name}</h2>
+                (<div className="flex items-center justify-center gap-4 group relative cursor-pointer group">
+                    <h2 className="text-sm font-semibold tracking-wider group-hover:mb-8">{name}</h2>
                     <img className="h-12 rounded-full" src={photo} alt=""/>
                     <span
                     onClick={handleAuth} 
-                    className="absolute top-10 left-8 bg-zinc-800 py-1 px-4 rounded-lg text-sm hidden tracking-[0.1em] group-hover:inline transition opacity-100 duration-1000">Sign out
+                    className="absolute top-6 left-6 bg-zinc-800 py-1 px-4 rounded-lg text-sm hidden tracking-[0.1em] group-hover:inline transition opacity-100 duration-1000">Sign out
                     </span>
                 </div>)}
         </nav>

@@ -21,12 +21,12 @@ const ImgSlider = () => {
     };
 
     return (
-        <div className="container mx-auto">
+        <div className="relative container mx-auto">
             <Slider {...settings} className=''>
                 {images.map((image, index) => (
-                    <div key={index} className="px-2 cursor-pointer">
-                        <a href="#" className='relative block shadow-custom-2'>
-                            <img src={image} alt={`Slide ${index + 1}`} className="rounded-lg hover:rounded-lg hover:border-4 hover:border-gray-300" />
+                    <div key={index} className="px-2 cursor-pointer  m-2">
+                        <a href="#" className='relative flex justify-center'>
+                            <img src={image} alt={`Slide ${index + 1}`} className="shadow-2xl hover:border-4 hover:border-gray-400 border-4 border-[#212433]" />
                         </a>
                     </div>
                 ))}
