@@ -4,10 +4,10 @@ import 'slick-carousel/slick/slick-theme.css';
 
 const ImgSlider = () => {
     const images = [
-        'src\\images\\slider-badag.jpg',
-        'src\\images\\slider-badging.jpg',
-        'src\\images\\slider-scale.jpg',
-        'src\\images\\slider-scales.jpg',
+        '\\images\\slider-badag.jpg',
+        '\\images\\slider-badging.jpg',
+        '\\images\\slider-scale.jpg',
+        '\\images\\slider-scales.jpg',
     ];
 
     const settings = {
@@ -24,9 +24,9 @@ const ImgSlider = () => {
         <div className="relative container mx-auto">
             <Slider {...settings} className=''>
                 {images.map((image, index) => (
-                    <div key={index} className="px-2 cursor-pointer  m-2">
+                    <div key={index} className="px-2 cursor-pointer  mb-2">
                         <a href="#" className='relative flex justify-center'>
-                            <img src={image} alt={`Slide ${index + 1}`} className="shadow-2xl hover:border-4 hover:border-gray-400 border-4 border-[#212433]" />
+                            <img src={image} alt={`Slide ${index + 1}`} className="shadow-2xl hover:border-4 hover:border-[#FFFFFF] border-4 border-gray-800/90"/>
                         </a>
                     </div>
                 ))}

@@ -52,33 +52,33 @@ const Header = () => {
     const heads = {
         home: {
             page: 'home',
-            image: 'src\\images\\home-icon.svg'
+            image: '\\images\\home-icon.svg'
         },
         search: {
             page: 'search',
-            image: 'src\\images\\search-icon.svg'
+            image: '\\images\\search-icon.svg'
         },
         watchlist: {
             page: 'watchlist',
-            image: 'src\\images\\watchlist-icon.svg'
+            image: '\\images\\watchlist-icon.svg'
         },
         originals: {
             page: 'originals',
-            image: 'src\\images\\original-icon.svg'
+            image: '\\images\\original-icon.svg'
         },
         movies: {
             page: 'movies',
-            image: 'src\\images\\movie-icon.svg'
+            image: '\\images\\movie-icon.svg'
         },
         series: {
             page: 'series',
-            image: 'src\\images\\series-icon.svg'
+            image: '\\images\\series-icon.svg'
         },
     }
     const headEntries = Object.entries(heads);
     return (
         <nav className='fixed z-10 w-full h-20 flex justify-between items-center px-10 overflow-hidden object-cover bg-[#040714]'>
-            <img className="w-20 mt-2" src="src\images\logo.svg" alt="" />
+            <img className="w-20 mt-2" src= '/logo.svg' alt="disney logo"/>
             {name && (
                 <div className="relative hidden lg:flex flex-nowrap gap-10 items-center flex-end ml-8 mr-auto">
                 {headEntries.map(([index, value]) => (
@@ -98,12 +98,12 @@ const Header = () => {
                     onClick={handleAuth}
                     className="text-[#F4F4F4] border-zinc-500 border-2 px-4 py-2 uppercase font-['Poppins'] tracking-wider rounded-lg hover:bg-[#F4F4F4] outline-none hover:text-[#040714] hover:border-transparent transition-all opacity-100 ease duration-200">Login</button>
                 </div>): 
-                (<div className="flex items-center justify-center gap-4 group relative cursor-pointer group">
-                    <h2 className="text-sm font-semibold tracking-wider group-hover:mb-8">{name}</h2>
+                (<div className="flex items-center justify-center gap-2 group relative cursor-pointer group">
+                    {/* <h2 className="text-sm font-semibold tracking-wider group-hover:mb-8 pl-20">{name}</h2> */}
                     <img className="h-12 rounded-full" src={photo} alt=""/>
                     <span
                     onClick={handleAuth} 
-                    className="absolute top-6 left-6 bg-zinc-800 py-1 px-4 rounded-lg text-sm hidden tracking-[0.1em] group-hover:inline transition opacity-100 duration-1000">Sign out
+                    className="absolute top-6 right-5 bg-zinc-800 py-1 px-4 rounded-lg text-sm hidden tracking-[0.1em] group-hover:inline transition opacity-100 duration-1000">Sign out
                     </span>
                 </div>)}
         </nav>
